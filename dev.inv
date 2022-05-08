@@ -1,2 +1,2 @@
 [dev]
-chandrikasahoog@ip-172-31-30-122 ansible_user=chandrikasahoog
+172.31.16.218 ansible_user=ec2-user
