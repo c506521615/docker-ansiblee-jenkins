@@ -1,2 +1,2 @@
 [dev]
-localhost ansible_user=chandrikasahoog
+172-31-30-122 ansible_user=chandrikasahoog
