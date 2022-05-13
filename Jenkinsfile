@@ -36,6 +36,7 @@ pipeline{
         }
         stage('Docker Deploy'){
             steps{
+                ansibleVault action: 'encrypt_string', content: '', input: '', installation: 'ansible', output: 'decrypt', vaultCredentialsId: 'rootpass'
                 ansiblePlaybook extras: "-e DOCKER_TAG=${DOCKER_TAG}", installation: 'ansible', playbook: 'ansibledeploy.yml'
             }
         }
