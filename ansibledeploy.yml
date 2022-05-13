@@ -2,6 +2,7 @@
 
 - name: Run the test playbook
   become: True
+  become_user: root
   gather_facts: false
   hosts: localhost
   tasks:
@@ -16,4 +17,4 @@
     - name: Deploy static website
       copy:
         src: index.html
-        dest: /docker-ansible-jenkins/
+        dest: /var/

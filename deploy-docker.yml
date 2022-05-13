@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   gather_facts: false
-  become: True
+  become: false
   tasks:
     - name: Start the container
       docker_container:
